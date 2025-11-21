@@ -23,6 +23,11 @@ outer:
 inner:
     cmp ecx, mapW          
     jge nextY
+
+    mov eax, edx            ; eax = y
+    imul eax, mapW          ; eax = y*mapW
+    add eax, ecx            ; eax = y*mapW + x
+    mov bl, mapRows[eax]    
 nextY:
 cdDone:
   ret
