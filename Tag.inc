@@ -9,6 +9,8 @@ OPTION PROC:PRIVATE
 ;Irvine (STDCALL)
 
 ;Game Procedures (PROTO)
+CountDots       PROTO
+
 
 ;Game Constants (EXTERNDEF)
 EXTERNDEF templateMapRows:BYTE
