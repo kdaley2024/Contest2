@@ -20,6 +20,11 @@ outer:
     cmp edx, mapH           
     jge cdDone
     xor ecx, ecx            ; x = 0
+inner:
+    cmp ecx, mapW          
+    jge nextY
+nextY:
+cdDone:
   ret
 CountDots ENDP
 END
