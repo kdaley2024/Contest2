@@ -11,3 +11,4 @@ OPTION PROC:PRIVATE
 ;Game Procedures (PROTO)
 
 ;Game Constants (EXTERNDEF)
+EXTERNDEF templateMapRows:BYTE
