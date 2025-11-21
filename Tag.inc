@@ -10,7 +10,7 @@ OPTION PROC:PRIVATE
 
 ;Game Procedures (PROTO)
 CountDots       PROTO
-
+ResetMap        PROTO
 
 ;Game Constants (EXTERNDEF)
 EXTERNDEF templateMapRows:BYTE
