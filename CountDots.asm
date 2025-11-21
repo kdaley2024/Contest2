@@ -27,7 +27,13 @@ inner:
     mov eax, edx            ; eax = y
     imul eax, mapW          ; eax = y*mapW
     add eax, ecx            ; eax = y*mapW + x
-    mov bl, mapRows[eax]    
+    mov bl, mapRows[eax]   
+    cmp bl, T_DOT
+    jne skipAdd
+    mov eax, dotsLeft
+    inc eax
+    mov dotsLeft, eax
+skipAdd:
 nextY:
 cdDone:
   ret
