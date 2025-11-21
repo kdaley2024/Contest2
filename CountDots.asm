@@ -1,5 +1,13 @@
 Include Tag.inc
 
+mapW        EQU 30
+mapH        EQU 20
+MAPSIZE     EQU (mapW * mapH)
+
+T_WALL      EQU '#'
+T_DOT       EQU '.'
+T_EMPTY     EQU ' '
+
 .code
 ;This procedure counts the number of dots on the board.
 ;If the value on the board is a '.' incrementation will occur
