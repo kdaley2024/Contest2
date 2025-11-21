@@ -12,6 +12,14 @@ T_EMPTY     EQU ' '
 ;This procedure counts the number of dots on the board.
 ;If the value on the board is a '.' incrementation will occur
 CountDots PROC PUBLIC USES eax ebx ecx edx
+    xor eax, eax
+    mov dotsLeft, eax
+
+    xor edx, edx            ; y = 0
+outer:
+    cmp edx, mapH           
+    jge cdDone
+    xor ecx, ecx            ; x = 0
   ret
 CountDots ENDP
 END
