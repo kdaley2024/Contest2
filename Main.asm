@@ -1,1 +1,11 @@
 Include Tag.inc
+
+;constants
+mapW        EQU 30
+mapH        EQU 20
+MAPSIZE     EQU (mapW * mapH)
+
+;the different types of tiles that can be on the board, whether its the wall (#), edible dots (.) or an empty space ( )
+T_WALL      EQU '#'
+T_DOT       EQU '.'
+T_EMPTY     EQU ' '
