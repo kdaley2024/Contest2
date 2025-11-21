@@ -5,3 +5,9 @@ INCLUDE Irvine32.inc
 ExitProcess PROTO :DWORD
 
 OPTION PROC:PRIVATE
+
+;Irvine (STDCALL)
+
+;Game Procedures (PROTO)
+
+;Game Constants (EXTERNDEF)
