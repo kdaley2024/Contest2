@@ -34,7 +34,11 @@ inner:
     inc eax
     mov dotsLeft, eax
 skipAdd:
+    inc ecx
+    jmp inner
 nextY:
+    inc edx
+    jmp outer
 cdDone:
   ret
 CountDots ENDP
