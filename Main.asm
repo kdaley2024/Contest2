@@ -13,6 +13,7 @@ T_EMPTY     EQU ' '
 .data
 
 ;this is how the game board will look.
+;A 30x20 board with walls
 templateMapRows BYTE "##############################"
                 BYTE "#............................#"
                 BYTE "#............................#"
