@@ -4,3 +4,4 @@ INCLUDE Irvine32.inc
 .stack 4096
 ExitProcess PROTO :DWORD
 
+OPTION PROC:PRIVATE
