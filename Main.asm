@@ -44,3 +44,12 @@ dotsLeft SDWORD 0
 
 ;public global variable definition - so that they can be used in other modules
 PUBLIC templateMapRows, mapRows, dotsLeft
+
+.code
+main PROC PUBLIC
+
+ExitGame:
+    INVOKE ExitProcess, 0
+main ENDP
+
+END main
