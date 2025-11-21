@@ -40,3 +40,7 @@ templateMapRows BYTE "##############################"
 mapRows BYTE MAPSIZE DUP(?)
 
 dotsLeft SDWORD 0
+
+
+;public global variable definition - so that they can be used in other modules
+PUBLIC templateMapRows, mapRows, dotsLeft
