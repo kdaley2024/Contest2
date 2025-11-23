@@ -16,4 +16,5 @@ ResetMap        PROTO
 EXTERNDEF templateMapRows:BYTE
 EXTERNDEF mapRows:BYTE
 EXTERNDEF dotsLeft:SDWORD
+EXTERNDEF score:SDWORD, lives:SDWORD
 
