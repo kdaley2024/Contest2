@@ -39,6 +39,13 @@ templateMapRows BYTE "##############################"
 ;creating an empty array to hold the inital bytes of the template for later use
 mapRows BYTE MAPSIZE DUP(?)
 
+px       SDWORD 1
+py       SDWORD 1
+gx       SDWORD mapW-2
+gy       SDWORD mapH-2
+
+score    SDWORD 0
+lives    SDWORD 3
 dotsLeft SDWORD 0
 
 
