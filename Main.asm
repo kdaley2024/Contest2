@@ -55,6 +55,10 @@ PUBLIC templateMapRows, mapRows, dotsLeft
 .code
 main PROC PUBLIC
 
+  call Randomize
+  call Init
+  call Clrscr
+
 ExitGame:
     INVOKE ExitProcess, 0
 main ENDP
