@@ -11,6 +11,8 @@ OPTION PROC:PRIVATE
 ;Game Procedures (PROTO)
 CountDots       PROTO
 ResetMap        PROTO
+Init            PROTO ;NewGame.asm
+
 
 ;Game Constants (EXTERNDEF)
 EXTERNDEF templateMapRows:BYTE
