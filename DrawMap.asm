@@ -35,6 +35,12 @@ notWall:
     ; yellow dots
     mov bh, YELLOW
 haveColor:
+    mov eax, esi
+    mov dl, al
+    mov eax, edi
+    mov dh, al
+    call Gotoxy
+
 doneRows:
 nextRow:
 
