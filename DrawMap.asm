@@ -54,6 +54,8 @@ nextRow:
     jmp rowLoop
 
 doneRows:
+    mov eax, GREEN
+    call SetTextColor
 
     ret
 DrawMap ENDP
