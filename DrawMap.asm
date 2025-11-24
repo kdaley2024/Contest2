@@ -23,10 +23,22 @@ colLoop:
 
     mov bl, mapRows[eax]
 
+    mov bh, CYAN                 
+    cmp bl, T_WALL
+    jne notWall
+    ; blue walls
+    mov bh, BLUE                 
+    jmp haveColor
+notWall:
+    cmp bl, T_DOT
+    jne haveColor
+    ; yellow dots
+    mov bh, YELLOW
+haveColor:
 doneRows:
 nextRow:
 
-    
+    ret
 DrawMap ENDP
 
 END
