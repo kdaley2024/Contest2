@@ -7,10 +7,13 @@ ExitProcess PROTO :DWORD
 OPTION PROC:PRIVATE
 
 ;Irvine (STDCALL)
+Clrscr        PROTO
+Randomize     PROTO
 Gotoxy        PROTO         ; DL=x, DH=y
 WriteString   PROTO         ; EDX=addr
 WriteDec      PROTO         ; EAX=value
 SetTextColor  PROTO         ; EAX=(bg<<4)+fg
+
 
 
 ;Game Procedures (PROTO)
