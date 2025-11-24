@@ -41,6 +41,14 @@ haveColor:
     mov dh, al
     call Gotoxy
 
+    movzx eax, bh
+    call SetTextColor
+    mov al, bl
+    call WriteChar
+
+    inc esi
+    jmp colLoop
+
 doneRows:
 nextRow:
 
