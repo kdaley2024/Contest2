@@ -14,6 +14,11 @@ DrawHUD PROC PUBLIC
     mov edx, OFFSET spc
     call WriteString
 
+    mov edx, OFFSET livesLbl
+    call WriteString
+    mov eax, lives
+    call WriteDec
+
     ret
 DrawHUD ENDP
 END
