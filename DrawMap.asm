@@ -68,6 +68,11 @@ doneRows:
     ;draw G
     mov eax, RED
     call SetTextColor
+    mov eax, gx
+    mov dl, al
+    mov eax, gy
+    mov dh, al
+    call Gotoxy
 
     ret
 DrawMap ENDP
