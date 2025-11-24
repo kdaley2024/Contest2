@@ -54,6 +54,7 @@ nextRow:
     jmp rowLoop
 
 doneRows:
+    ;draw C
     mov eax, GREEN
     call SetTextColor
     mov eax, px
@@ -63,6 +64,10 @@ doneRows:
     call Gotoxy
     mov al, 'C'
     call WriteChar
+
+    ;draw G
+    mov eax, RED
+    call SetTextColor
 
     ret
 DrawMap ENDP
