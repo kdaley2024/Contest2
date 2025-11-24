@@ -73,6 +73,8 @@ doneRows:
     mov eax, gy
     mov dh, al
     call Gotoxy
+    mov al, 'G'
+    call WriteChar
 
     ret
 DrawMap ENDP
