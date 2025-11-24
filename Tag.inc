@@ -17,7 +17,8 @@ SetTextColor  PROTO         ; EAX=(bg<<4)+fg
 CountDots       PROTO
 ResetMap        PROTO
 Init            PROTO ;NewGame.asm
-ScoreBoard      PROTO
+DrawHud         PROTO
+DrawMap         PROTO
 
 
 ;Game Constants (EXTERNDEF)
