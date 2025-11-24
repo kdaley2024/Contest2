@@ -48,6 +48,7 @@ score    SDWORD 0
 lives    SDWORD 3
 dotsLeft SDWORD 0
 
+nl        BYTE 13,10,0       ;new line
 spc       BYTE ' ',0
 scoreLbl  BYTE "Score: ",0
 livesLbl  BYTE "Lives: ",0
