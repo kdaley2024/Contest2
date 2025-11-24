@@ -1,3 +1,7 @@
+INCLUDE tag.incc
+
+.code
+
 DrawHUD PROC PUBLIC
     mov eax, WHITE
     call SetTextColor
