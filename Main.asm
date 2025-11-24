@@ -56,6 +56,7 @@ livesLbl  BYTE "Lives: ",0
 PUBLIC templateMapRows, mapRows, dotsLeft
 PUBLIC px, py, gx, gy
 PUBLIC score, lives
+PUBLIC scoreLbl, livesLbl
 PUBLIC nl, spc
 
 .code
