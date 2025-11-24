@@ -49,8 +49,11 @@ haveColor:
     inc esi
     jmp colLoop
 
-doneRows:
 nextRow:
+    inc edi
+    jmp rowLoop
+
+doneRows:
 
     ret
 DrawMap ENDP
