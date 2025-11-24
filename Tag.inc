@@ -9,6 +9,7 @@ OPTION PROC:PRIVATE
 ;Irvine (STDCALL)
 Clrscr        PROTO
 Randomize     PROTO
+WriteChar     PROTO
 Gotoxy        PROTO         ; DL=x, DH=y
 WriteString   PROTO         ; EDX=addr
 WriteDec      PROTO         ; EAX=value
