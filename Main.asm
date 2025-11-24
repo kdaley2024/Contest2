@@ -48,6 +48,9 @@ score    SDWORD 0
 lives    SDWORD 3
 dotsLeft SDWORD 0
 
+spc       BYTE ' ',0
+scoreLbl  BYTE "Score: ",0
+livesLbl  BYTE "Lives: ",0
 
 ;public global variable definition - so that they can be used in other modules
 PUBLIC templateMapRows, mapRows, dotsLeft
