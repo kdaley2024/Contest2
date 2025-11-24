@@ -62,6 +62,10 @@ main PROC PUBLIC
   call Init
   call Clrscr
 
+GameLoop:
+  call DrawMap
+  call DrawHUD
+
 ExitGame:
     INVOKE ExitProcess, 0
 main ENDP
