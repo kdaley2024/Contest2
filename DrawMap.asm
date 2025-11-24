@@ -56,6 +56,13 @@ nextRow:
 doneRows:
     mov eax, GREEN
     call SetTextColor
+    mov eax, px
+    mov dl, al
+    mov eax, py
+    mov dh, al
+    call Gotoxy
+    mov al, 'C'
+    call WriteChar
 
     ret
 DrawMap ENDP
