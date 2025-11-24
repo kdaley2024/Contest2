@@ -16,8 +16,17 @@ rowLoop:
 colLoop:
     cmp esi, mapW                
     jge nextRow
+
+    mov eax, edi
+    imul eax, mapW
+    add eax, esi
+
+    mov bl, mapRows[eax]
+
 doneRows:
 nextRow:
+
+    
 DrawMap ENDP
 
 END
