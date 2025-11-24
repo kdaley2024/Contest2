@@ -54,6 +54,9 @@ livesLbl  BYTE "Lives: ",0
 
 ;public global variable definition - so that they can be used in other modules
 PUBLIC templateMapRows, mapRows, dotsLeft
+PUBLIC px, py, gx, gy
+PUBLIC score, lives
+PUBLIC nl, spc
 
 .code
 main PROC PUBLIC
