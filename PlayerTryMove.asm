@@ -21,8 +21,23 @@ PlayerTryMove PROC PUBLIC USES ecx edx esi
     ; compute newY = py + dy
     mov  ecx, py
     add  ecx, ebx
-
-
+    
+    ; clamp newY into [1, mapH-2]
+    cmp  ecx, 1
+    jge  @chkBottomY
+    mov  ecx, 1
+    jmp  @yClamped
+@chkBottomY:
+    cmp  ecx, mapH-2
+    jle  @yClamped
+    mov  ecx, mapH-2
+@yClamped:
+    ; now edx = newX, ecx = newY
+    
+    ; index = newY * mapW + newX
+    mov  esi, ecx
+    imul esi, mapW
+    add  esi, edx
     ret
 PlayerTryMove ENDP
 END
