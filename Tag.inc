@@ -23,7 +23,9 @@ ResetMap        PROTO
 Init            PROTO ;NewGame.asm
 DrawHud         PROTO ;ScoreBoard.asm
 DrawMap         PROTO 
-HandlePlayer    PROTO
+PlayerTryMove   PROTO 
+HandlePlayer    PROTO 
+
 
 
 ;Game Constants (EXTERNDEF)
