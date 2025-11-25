@@ -10,6 +10,13 @@ T_WALL      EQU '#'
 T_DOT       EQU '.'
 T_EMPTY     EQU ' '
 
+; different dirrections that the player can go in and keys that can be pressed
+VK_LEFT     EQU 25h
+VK_UP       EQU 26h
+VK_RIGHT    EQU 27h
+VK_DOWN     EQU 28h
+VK_ESCAPE   EQU 1Bh
+
 .data
 
 ;this is how the game board will look.
