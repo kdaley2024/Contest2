@@ -1,4 +1,4 @@
-INCLUDE tag.inc
+INCLUDE Tag.inc
 .code
 ; expects dx in EAX, dy in EBX
 PlayerTryMove PROC PUBLIC USES ecx edx esi
@@ -52,7 +52,7 @@ PlayerTryMove PROC PUBLIC USES ecx edx esi
     ; commit move
     mov  px, edx
     mov  py, ecx
-    
+
     ret
 PlayerTryMove ENDP
 END
