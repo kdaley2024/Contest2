@@ -38,6 +38,21 @@ PlayerTryMove PROC PUBLIC USES ecx edx esi
     mov  esi, ecx
     imul esi, mapW
     add  esi, edx
+
+     mov  al, mapRows[esi]
+
+    ; if dot, eat it
+    cmp  al, T_DOT
+    jne  @noDot
+    dec  dotsLeft
+    inc  score
+    mov  mapRows[esi], T_EMPTY
+@noDot:
+
+    ; commit move
+    mov  px, edx
+    mov  py, ecx
+    
     ret
 PlayerTryMove ENDP
 END
