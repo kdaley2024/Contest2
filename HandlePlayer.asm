@@ -10,6 +10,15 @@ VK_ESCAPE   EQU 1Bh
 .code
 
 HandlePlayer PROC PUBLIC USES eax ebx
+    ; LEFT: dx = -1, dy = 0
+    push VK_LEFT
+    call GetAsyncKeyState@4
+    test ax, 8000h
+    jz   @noLeft
+    mov  eax, -1
+    mov  ebx, 0
+    call PlayerTryMove
+@noLeft:
     ret
 HandlePlayer ENDP
 
