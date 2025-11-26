@@ -8,7 +8,7 @@ VK_DOWN     EQU 28h
 VK_ESCAPE   EQU 1Bh
 
 .code
-
+;this procedure handles the keyboard presses and calls PlayerTryMove to convert the key presses into actual player movement
 HandlePlayer PROC PUBLIC USES eax ebx
     ; LEFT: dx = -1, dy = 0
     push VK_LEFT
