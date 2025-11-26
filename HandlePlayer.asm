@@ -19,6 +19,15 @@ HandlePlayer PROC PUBLIC USES eax ebx
     mov  ebx, 0
     call PlayerTryMove
 @noLeft:
+    ; RIGHT: dx = +1, dy = 0
+    push VK_RIGHT
+    call GetAsyncKeyState@4
+    test ax, 8000h
+    jz   @noRight
+    mov  eax, 1
+    mov  ebx, 0
+    call PlayerTryMove
+@noRight:
     ret
 HandlePlayer ENDP
 
