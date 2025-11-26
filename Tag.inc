@@ -27,6 +27,9 @@ PlayerTryMove   PROTO
 HandlePlayer    PROTO 
 
 
+;Windows API learnt from Microsoft learn. There are also some other Windows API located in the textbook
+EXTERN  GetAsyncKeyState@4:PROC
+
 
 ;Game Constants (EXTERNDEF)
 EXTERNDEF templateMapRows:BYTE
