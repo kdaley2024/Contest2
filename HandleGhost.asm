@@ -40,6 +40,10 @@ HandleGhost PROC PUBLIC USES eax ebx
     mov  ebx, -1
     call GhostTryMove
 @noW:
+    ; S: down
+    push VK_S
+    call GetAsyncKeyState@4
+    test ax, 8000h
   
     ret
 HandleGhost ENDP
