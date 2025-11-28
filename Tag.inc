@@ -26,6 +26,7 @@ DrawMap         PROTO
 PlayerTryMove   PROTO 
 HandlePlayer    PROTO 
 GhostTryMove    PROTO
+HandleGhost     PROTO
 
 
 ;Windows API learnt from Microsoft learn. There are also some other Windows API located in the textbook
