@@ -1,7 +1,8 @@
 INCLUDE Tag.inc
 .code
 
-; expects dx in EAX, dy in EBX
+; this procedure checks the x and y coordinates of the next position 
+; to see it it is within the bound of the map
 GhostTryMove PROC PUBLIC USES ecx edx
 
     ; compute newX = gx + dx
