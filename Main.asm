@@ -16,6 +16,10 @@ VK_UP       EQU 26h
 VK_RIGHT    EQU 27h
 VK_DOWN     EQU 28h
 VK_ESCAPE   EQU 1Bh
+VK_A        EQU 41h
+VK_D        EQU 44h
+VK_W        EQU 57h
+VK_S        EQU 53h
 
 .data
 
