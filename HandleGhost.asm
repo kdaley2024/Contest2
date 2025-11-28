@@ -12,6 +12,11 @@ VK_S        EQU 53h
 
 .code
 HandleGhost PROC PUBLIC USES eax ebx
+
+    ; A: left
+    push VK_A
+    call GetAsyncKeyState@4
+    test ax, 8000h
   
     ret
 HandleGhost ENDP
