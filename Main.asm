@@ -82,6 +82,9 @@ GameLoop:
   call DrawMap
   call DrawHUD
 
+  call HandlePlayer
+  call HandleGhost
+
 ExitGame:
     INVOKE ExitProcess, 0
 main ENDP
