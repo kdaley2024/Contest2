@@ -1,6 +1,7 @@
 INCLUDE Tag.inc
 .code
-; expects dx in EAX, dy in EBX
+; procedure that checks whether the position the player is trying to move
+; to is within the bounds of the game screen
 PlayerTryMove PROC PUBLIC USES ecx edx esi
     ; compute newX = px + dx
     mov  edx, px
