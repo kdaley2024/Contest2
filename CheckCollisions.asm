@@ -1,5 +1,9 @@
 INCLUDE Tag.inc
 
+mapW        EQU 30
+mapH        EQU 20
+MAPSIZE     EQU (mapW * mapH)
+
 .code
 ;this procedure checks if the coordinates of C and G are equal and if they are
 ;there would be a collision and the life of C would decrease by 1 and the players would be reset to their respective coordinates.
