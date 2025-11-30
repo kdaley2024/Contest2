@@ -137,6 +137,7 @@ GameLoop:
   call WriteString
   mov  edx, OFFSET loseMsg
   call WriteString
+  jmp  ExitGamePrint
 
 @noEsc:
 ExitGamePrint:
