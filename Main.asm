@@ -112,6 +112,11 @@ GameLoop:
 
 
 @checkLose:
+  mov eax, lives
+  cmp eax, 0
+  jg  @checkQuit
+
+@checkQuit
 ExitGamePrint:
 
 
