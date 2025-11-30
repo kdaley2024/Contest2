@@ -106,9 +106,13 @@ GameLoop:
   call SetTextColor
   mov edx, OFFSET nl
   call WriteString
+  mov edx, OFFSET winMsg
+  call WriteString
+  jmp ExitGamePrint
 
 
 @checkLose:
+ExitGamePrint:
 
 
 ExitGame:
