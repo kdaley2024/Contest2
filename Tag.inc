@@ -27,7 +27,7 @@ PlayerTryMove   PROTO
 HandlePlayer    PROTO 
 GhostTryMove    PROTO
 HandleGhost     PROTO
-
+ResetLevel      PROTO
 
 ;Windows API learnt from Microsoft learn. There are also some other Windows API located in the textbook
 EXTERN  GetAsyncKeyState@4:PROC
