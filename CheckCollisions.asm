@@ -9,6 +9,10 @@ CheckCollisions PROC PUBLIC USES eax ecx
   mov ecx, gx
   cmp eax, ecx
   jne Ret
+  mov eax, py
+  mov ecx, gy
+  cmp eax, ecx
+  jne Ret
 
 Ret:
   ret
