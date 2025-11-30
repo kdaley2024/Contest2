@@ -118,6 +118,8 @@ GameLoop:
 
   mov eax, RED
   call SetTextColor
+  mov edx, OFFSET nl
+  call WriteString
 
 @checkQuit
 ExitGamePrint:
