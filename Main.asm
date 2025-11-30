@@ -90,6 +90,13 @@ GameLoop:
 ; check for tag (G hits C)
   call CheckCollisions
 
+; check win
+    mov eax, dotsLeft
+    cmp eax, 0
+    jne @checkLose
+
+checkLose:
+
 
 ExitGame:
     INVOKE ExitProcess, 0
