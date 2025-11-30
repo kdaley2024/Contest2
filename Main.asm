@@ -59,10 +59,16 @@ score    SDWORD 0
 lives    SDWORD 3
 dotsLeft SDWORD 0
 
+frameDelay  DWORD 70
+
 nl        BYTE 13,10,0       ;new line
 spc       BYTE ' ',0
 scoreLbl  BYTE "Score: ",0
 livesLbl  BYTE "Lives: ",0
+
+winMsg    BYTE "YOU ATE ALL DOTS!",0
+loseMsg   BYTE "GAME OVER!",0
+quitMsg   BYTE "Thanks for playing.",0
 
 ;public global variable definition - so that they can be used in other modules
 PUBLIC templateMapRows, mapRows, dotsLeft
@@ -71,6 +77,7 @@ PUBLIC score, lives
 PUBLIC scoreLbl, livesLbl
 PUBLIC nl, spc
 PUBLIC frameDelay
+PUBLIC winMsg, loseMsg, quitMsg
 
 .code
 main PROC PUBLIC
@@ -99,6 +106,7 @@ GameLoop:
   call SetTextColor
   mov edx, OFFSET nl
   call WriteString
+
 
 @checkLose:
 
