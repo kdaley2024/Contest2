@@ -116,6 +116,9 @@ GameLoop:
   cmp eax, 0
   jg  @checkQuit
 
+  mov eax, RED
+  call SetTextColor
+
 @checkQuit
 ExitGamePrint:
 
