@@ -145,7 +145,9 @@ GameLoop:
   call Delay
   jmp  GameLoop
 ExitGamePrint:
-
+  mov eax, WHITE
+  call SetTextColor
+  mov edx, OFFSET nl
 
 ExitGame:
     INVOKE ExitProcess, 0
