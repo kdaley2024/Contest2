@@ -97,6 +97,8 @@ GameLoop:
 
   mov eax, YELLOW
   call SetTextColor
+  mov edx, OFFSET nl
+  call WriteString
 
 @checkLose:
 
