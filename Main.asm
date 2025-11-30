@@ -125,6 +125,13 @@ GameLoop:
   jmp ExitGamePrint
 
 @checkQuit
+;ESC key will exit game
+  push VK_ESCAPE
+  call GetAsyncKeyState@4
+  test ax, 8000h
+  jz   @noEsc
+
+@noEsc:
 ExitGamePrint:
 
 
