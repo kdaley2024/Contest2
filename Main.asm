@@ -91,9 +91,12 @@ GameLoop:
   call CheckCollisions
 
 ; check win
-    mov eax, dotsLeft
-    cmp eax, 0
-    jne @checkLose
+  mov eax, dotsLeft
+  cmp eax, 0
+  jne @checkLose
+
+  mov eax, YELLOW
+  call SetTextColor
 
 @checkLose:
 
