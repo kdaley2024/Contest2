@@ -131,6 +131,9 @@ GameLoop:
   test ax, 8000h
   jz   @noEsc
 
+  mov  eax, RED
+  call SetTextColor
+
 @noEsc:
 ExitGamePrint:
 
