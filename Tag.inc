@@ -28,6 +28,7 @@ HandlePlayer    PROTO
 GhostTryMove    PROTO
 HandleGhost     PROTO
 ResetLevel      PROTO
+CheckCollisions PROTO
 
 ;Windows API learnt from Microsoft learn. There are also some other Windows API located in the textbook
 EXTERN  GetAsyncKeyState@4:PROC
@@ -42,3 +43,4 @@ EXTERNDEF px:SDWORD, py:SDWORD
 EXTERNDEF gx:SDWORD, gy:SDWORD
 EXTERNDEF nl:BYTE, spc:BYTE
 EXTERNDEF scoreLbl:BYTE, livesLbl:BYTE
+EXTERNDEF frameDelay:DWORD
