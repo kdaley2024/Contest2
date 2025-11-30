@@ -144,10 +144,14 @@ GameLoop:
   mov  eax, frameDelay
   call Delay
   jmp  GameLoop
+
 ExitGamePrint:
   mov eax, WHITE
   call SetTextColor
   mov edx, OFFSET nl
+  call WriteString
+  mov edx, OFFSET quitMsg
+  call WriteString
 
 ExitGame:
     INVOKE ExitProcess, 0
