@@ -95,7 +95,7 @@ GameLoop:
     cmp eax, 0
     jne @checkLose
 
-checkLose:
+@checkLose:
 
 
 ExitGame:
