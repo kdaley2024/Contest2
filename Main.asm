@@ -152,6 +152,8 @@ ExitGamePrint:
   call WriteString
   mov edx, OFFSET quitMsg
   call WriteString
+  mov edx, OFFSET nl
+  call WriteString
 
 ExitGame:
     INVOKE ExitProcess, 0
