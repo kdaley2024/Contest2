@@ -140,6 +140,10 @@ GameLoop:
   jmp  ExitGamePrint
 
 @noEsc:
+; frame pacing
+  mov  eax, frameDelay
+  call Delay
+  jmp  GameLoop
 ExitGamePrint:
 
 
