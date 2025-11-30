@@ -14,6 +14,8 @@ CheckCollisions PROC PUBLIC USES eax ecx
   cmp eax, ecx
   jne Ret
 
+  dec lives
+
 Ret:
   ret
 CheckCollisions ENDP
