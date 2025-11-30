@@ -70,6 +70,7 @@ PUBLIC px, py, gx, gy
 PUBLIC score, lives
 PUBLIC scoreLbl, livesLbl
 PUBLIC nl, spc
+PUBLIC frameDelay
 
 .code
 main PROC PUBLIC
