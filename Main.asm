@@ -85,6 +85,9 @@ GameLoop:
   call HandlePlayer
   call HandleGhost
 
+  call CheckCollisions
+
+
 ExitGame:
     INVOKE ExitProcess, 0
 main ENDP
