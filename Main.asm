@@ -74,18 +74,20 @@ PUBLIC frameDelay
 
 .code
 main PROC PUBLIC
-
+; draw current frame
   call Randomize
   call Init
   call Clrscr
 
 GameLoop:
+; draw current frame
   call DrawMap
   call DrawHUD
-
+; player (C) one move per frame with arrow keys
   call HandlePlayer
+; player (G) one move per frame with arrow keys
   call HandleGhost
-
+; check for tag (G hits C)
   call CheckCollisions
 
 
