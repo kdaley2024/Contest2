@@ -25,7 +25,7 @@ CheckCollisions PROC PUBLIC USES eax ecx
   mov gx, mapW-2
   mov gy, mapH-2
 
-Ret:
+@Ret:
   ret
 CheckCollisions ENDP
 END
