@@ -16,6 +16,11 @@ CheckCollisions PROC PUBLIC USES eax ecx
 
   dec lives
 
+  mov px, 1
+  mov py, 1
+  mov gx, mapW-2
+  mov gy, mapH-2
+
 Ret:
   ret
 CheckCollisions ENDP
