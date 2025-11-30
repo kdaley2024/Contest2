@@ -120,6 +120,8 @@ GameLoop:
   call SetTextColor
   mov edx, OFFSET nl
   call WriteString
+  mov edx, OFFSET loseMsg
+  call WriteString
 
 @checkQuit
 ExitGamePrint:
