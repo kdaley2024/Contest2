@@ -1,5 +1,9 @@
 INCLUDE Tag.inc
 
+mapW        EQU 30
+mapH        EQU 20
+MAPSIZE     EQU (mapW * mapH)
+
 .code
 
 DrawHUD PROC PUBLIC

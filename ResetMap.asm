@@ -1,4 +1,9 @@
-INCLUDE tag.inc
+INCLUDE Tag.inc
+
+mapW        EQU 30
+mapH        EQU 20
+MAPSIZE     EQU (mapW * mapH)
+
 .code
 
 ; Copies MAPSIZE bytes from templateMapRows to mapRows 
