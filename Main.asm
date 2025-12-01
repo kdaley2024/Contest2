@@ -124,7 +124,7 @@ GameLoop:
   call WriteString
   jmp ExitGamePrint
 
-@checkQuit
+@checkQuit:
 ;ESC key will exit game
   push VK_ESCAPE
   call GetAsyncKeyState@4
