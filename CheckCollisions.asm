@@ -12,11 +12,11 @@ CheckCollisions PROC PUBLIC USES eax ecx
   mov eax, px
   mov ecx, gx
   cmp eax, ecx
-  jne Ret
+  jne Returning
   mov eax, py
   mov ecx, gy
   cmp eax, ecx
-  jne Ret
+  jne Returning
 
   dec lives
 
@@ -25,7 +25,7 @@ CheckCollisions PROC PUBLIC USES eax ecx
   mov gx, mapW-2
   mov gy, mapH-2
 
-Ret:
+Returning:
   ret
 CheckCollisions ENDP
 END
