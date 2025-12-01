@@ -1,4 +1,13 @@
 INCLUDE Tag.inc
+
+mapW        EQU 30
+mapH        EQU 20
+MAPSIZE     EQU (mapW * mapH)
+
+T_WALL      EQU '#'
+T_DOT       EQU '.'
+T_EMPTY     EQU ' '
+
 .code
 ; procedure that checks whether the position the player is trying to move
 ; to is within the bounds of the game screen
