@@ -47,3 +47,21 @@ Ghost movement is also clamped to stay within the map boundaries.
 ## Quitting
 
 Press ESC at any time to exit the game.
+
+# APIs Used From the textbook
+## From Irvine32
+
+Console:
+
+Gotoxy – move cursor to (x,y)
+WriteChar / WriteString / WriteDec – render characters/text
+SetTextColor – color tiles and sprites
+Clrscr – clear console
+Timing:
+Delay – millisecond sleep
+Randomize – seed RNG
+
+## From Microsoft Learn
+
+Keyboard (non-blocking):
+GetAsyncKeyState – detect arrow keys, WASD, and ESC without blocking
