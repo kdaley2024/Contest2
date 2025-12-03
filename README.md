@@ -34,6 +34,16 @@ LEFT, RIGHT, UP, DOWN move the player one tile per frame.
 
 Movement clamps to the map interior and ignores walls.
 
+# Ghost Movement
+
+Controlled manually using W A S D for testing/2-player mode:
+
+A / D → left / right
+
+W / S → up / down
+
+Ghost movement is also clamped to stay within the map boundaries.
+
 
 
 Press ESC at any time to exit the game.
