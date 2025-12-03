@@ -52,7 +52,6 @@ Press ESC at any time to exit the game.
 ## From Irvine32
 
 Console:
-
 Gotoxy – move cursor to (x,y)
 WriteChar / WriteString / WriteDec – render characters/text
 SetTextColor – color tiles and sprites
@@ -61,7 +60,4 @@ Timing:
 Delay – millisecond sleep
 Randomize – seed RNG
 
-## From Microsoft Learn
 
-Keyboard (non-blocking):
-GetAsyncKeyState – detect arrow keys, WASD, and ESC without blocking
