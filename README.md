@@ -1,9 +1,9 @@
 # Contest2
-##Tag
+## Tag
 
 Computer Architecture and Assembly Language project by Chervelle Pierre and Karla Daley.
 
-#Overview
+# Overview
 
 Tag is a simple arcade-style console game implemented in MASM using techniques from Kip Irvine – Assembly Language for x86 Processors.
 The game runs entirely in a Windows console window using text-mode “graphics.” It relies on Irvine32 library routines (Gotoxy, WriteString/WriteChar, SetTextColor, Clrscr, Randomize) and Win32 keyboard input via GetAsyncKeyState.
