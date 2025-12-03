@@ -60,4 +60,19 @@ Timing:
 Delay – millisecond sleep
 Randomize – seed RNG
 
+## From Microsoft Learn
 
+Keyboard (non-blocking):
+GetAsyncKeyState – detect arrow keys, WASD, and ESC without blocking
+
+# Game Operations:
+ResetMap- Copies the template map into mapRows and recounts dots.
+ResetLevel- Resets the map and repositions player/ghost.
+NewGame- Initializes score, lives, map, and starting positions.
+DrawMap- Renders:walls, dots, empty spaces (colored), player C, ghost G
+Scoreboard- Prints score and lives at the bottom of the grid.
+HandlePlayer-Arrow-key movement with collision rules and dot eating.
+HandleGhost- WASD-input ghost movement (optional double-speed by calling twice).
+PlayerTryMove / GhostTryMove- Clamps positions and updates new coordinates.
+CheckCollisions- Detects if player and ghost share the same tile → life lost, respawn.
+CountDots- Counts remaining dots on the map for win condition.
