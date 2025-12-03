@@ -1,4 +1,4 @@
-# Contest2
+# Contest 2
 ## Tag
 
 Computer Architecture and Assembly Language project by Chervelle Pierre and Karla Daley.
@@ -11,3 +11,29 @@ The game runs entirely in a Windows console window using text-mode “graphics.�
 The player (C) moves around a dot-filled grid while a ghost (G) chases them. The goal: collect all dots before losing all lives. If the ghost touches the player, a life is lost and both characters reset to opposite corners.
 
 The map is a fixed 30×20 maze with walls, empty tiles, and collectible dots.
+
+# What You See
+
+Map: A 30×20 rectangular playfield with border walls (#) and dots (.) filling the inside.
+
+Player (C) in green, starting at top-left interior.
+
+Ghost (G) in red, starting at bottom-right interior.
+
+HUD under the map showing Score and Lives.
+
+# Objective
+
+Eat all dots on the map. Each dot increases your score. When all dots are collected, you win the game.
+
+# Player Movement
+
+Controlled using the arrow keys:
+
+LEFT, RIGHT, UP, DOWN move the player one tile per frame.
+
+Movement clamps to the map interior and ignores walls.
+
+
+
+Press ESC at any time to exit the game.
