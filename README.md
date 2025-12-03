@@ -26,7 +26,7 @@ HUD under the map showing Score and Lives.
 
 Eat all dots on the map. Each dot increases your score. When all dots are collected, you win the game.
 
-# Player Movement
+## Player Movement
 
 Controlled using the arrow keys:
 
@@ -34,7 +34,7 @@ LEFT, RIGHT, UP, DOWN move the player one tile per frame.
 
 Movement clamps to the map interior and ignores walls.
 
-# Ghost Movement
+## Ghost Movement
 
 Controlled manually using W A S D for testing/2-player mode:
 
@@ -44,6 +44,6 @@ W / S → up / down
 
 Ghost movement is also clamped to stay within the map boundaries.
 
-
+## Quitting
 
 Press ESC at any time to exit the game.
