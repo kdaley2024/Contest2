@@ -102,6 +102,7 @@ GameLoop:
   cmp eax, 0
   jne @checkLose
 
+;win message and its attributes
   mov eax, YELLOW
   call SetTextColor
   mov edx, OFFSET nl
@@ -131,6 +132,7 @@ GameLoop:
   test ax, 8000h
   jz   @noEsc
 
+;lose message and its attributes
   mov  eax, RED
   call SetTextColor
   mov  edx, OFFSET nl
